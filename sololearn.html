@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>js</title>
+   <link rel="stylesheet" href="monStyle.css">
+
+</head>
+<body>
+<div id="div1">
+<h1> Bienvenue dans le jeu de Craps </h1>
+<div id="im">
+<img id="myImage" height= 300px src="lapin.jpg">
+</div>
+<button  class="btn1" onclick="jouer()"> jouer </button>
+<div id="resulta" > Bonne chance ! </div>
+</div>
+
+<script>
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function jouer(){
+var d1, d2, somme, resultat ;
+d1= getRandomInt(6)+1;
+d2= getRandomInt(6)+1;
+somme= d1+d2;
+if(somme == 7 || somme == 11){
+document.getElementById("myImage").src = "lapinGagné.jpg";
+document.getElementById("resulta").innerHTML= d1 + " et " + d2 + " la somme est : " + somme   + "<br/> </br>bravo! vous avez gagné";
+}
+else if ( somme == 3 || somme == 5){
+document.getElementById("myImage").src = "lapinPerdu.jpg";
+document.getElementById("resulta").innerHTML= d1 + " et " + d2 + " la somme est : " + somme   + "<br/> </br>Oups! vous avez perdu";
+}
+else {
+document.getElementById("myImage").src = "lapin2.jpg";
+document.getElementById("resulta").innerHTML= d1 + " et " + d2 + " la somme est : " + somme   + "<br/> </br>rejouez!";
+}
+}
+
+</script>
+</body>
+</html>

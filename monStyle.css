@@ -1,0 +1,35 @@
+h1{
+	text-align : center;
+}
+
+#div1{
+	background-color : #E8E8E8;
+	height : 500px;
+	width : 500px;
+	
+	
+	}
+
+#im{
+	text-align : center;
+}
+
+#resulta{
+
+background : grey;
+margin-left : 100px;
+border = 1px;
+text-align: center;
+color : white;
+height : 70px;
+width : 300px;
+
+}
+
+.btn1{
+	background-color : #FFC0CB;
+	display : block;
+	width = 100px;
+	
+
+}
